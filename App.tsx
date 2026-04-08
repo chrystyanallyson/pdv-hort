@@ -85,7 +85,7 @@ const App: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen flex bg-slate-50 overflow-hidden font-['Inter'] relative">
+    <div className="min-h-screen flex bg-slate-50 overflow-hidden font-['Inter'] relative print:block print:w-full print:h-auto print:bg-white print:overflow-visible">
       {/* Overlay mobile */}
       {isSidebarOpen && (
         <div 
