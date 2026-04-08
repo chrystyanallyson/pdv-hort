@@ -253,7 +253,7 @@ const App: React.FC = () => {
             </div>
             <div className="flex-1 overflow-auto p-4 lg:p-10 bg-slate-200 flex justify-center">
               <div className="bg-white shadow-2xl w-full max-w-[21cm] p-4 lg:p-[1.5cm] border border-slate-300">
-                <PrintPreview order={printingOrder} />
+                <PrintPreview order={printingOrder} company={company} />
               </div>
             </div>
           </div>
@@ -261,7 +261,7 @@ const App: React.FC = () => {
       )}
 
       <div className="print-only">
-        {printingOrder && <PrintPreview order={printingOrder} />}
+        {printingOrder && <PrintPreview order={printingOrder} company={company} />}
       </div>
     </div>
   );

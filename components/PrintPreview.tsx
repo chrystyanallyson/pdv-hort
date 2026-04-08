@@ -5,11 +5,11 @@ import { dataService } from '../dataService';
 
 interface PrintPreviewProps {
   order: Order;
+  company: CompanyConfig;
 }
 
-const PrintPreview: React.FC<PrintPreviewProps> = ({ order }) => {
+const PrintPreview: React.FC<PrintPreviewProps> = ({ order, company }) => {
   const items = Array.isArray(order.items) ? order.items : [];
-  const company: CompanyConfig = dataService.getCompanyConfig();
 
   return (
     <div className="print-area text-slate-900 bg-white w-full max-w-[21cm] mx-auto p-1 text-[8pt] leading-tight">
