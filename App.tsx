@@ -174,7 +174,7 @@ const App: React.FC = () => {
       </aside>
 
       {/* Main Container */}
-      <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
+      <div className="flex-1 flex flex-col min-w-0 overflow-hidden no-print">
         <header className="h-16 lg:h-20 bg-white border-b border-slate-200 flex items-center justify-between px-4 lg:px-10 no-print shrink-0 shadow-sm z-20">
           <div className="flex items-center gap-3">
             <button 
