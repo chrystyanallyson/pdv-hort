@@ -12,7 +12,7 @@ const PrintPreview: React.FC<PrintPreviewProps> = ({ order, company }) => {
   const items = Array.isArray(order.items) ? order.items : [];
 
   return (
-    <div className="print-area text-slate-900 bg-white w-full max-w-[21cm] mx-auto p-1 text-[8pt] leading-tight">
+    <div className="print-area text-slate-900 bg-white w-full max-w-[21cm] print:w-[21cm] print:max-w-none mx-auto p-1 text-[8pt] leading-tight">
       {/* CABEÇALHO COM LOGO */}
       <div className="flex justify-between items-start border-b border-slate-900 pb-3 mb-3">
         <div className="flex gap-3 items-center">
